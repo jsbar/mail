@@ -6,21 +6,21 @@ keep_vars = true
 [observability]
 enabled = true
 
-[[d1_databases]]
-binding = "db"			#d1数据库绑定名默认不可修改
-database_name = "mail-db01"		#d1数据库名字
-database_id = "2732aa96-521b-47f0-a7ba-c7842e452df5"		#d1数据库id
+#[[d1_databases]]
+#binding = "db"			#d1数据库绑定名默认不可修改
+#database_name = ""		#d1数据库名字
+#database_id = ""		#d1数据库id
 
-[[kv_namespaces]]
-binding = "kv"			#kv绑定名默认不可修改
-id = "mail-kv01"					#kv数据库id
+#[[kv_namespaces]]
+#binding = "kv"			#kv绑定名默认不可修改
+#id = ""					#kv数据库id
 
-[[r2_buckets]]
-binding = "r2"			#r2对象存储绑定名默认不可修改
-bucket_name = "mailr2"		#r2对象存储桶的名字
+#[[r2_buckets]]
+#binding = "r2"			#r2对象存储绑定名默认不可修改
+#bucket_name = ""		#r2对象存储桶的名字
 
-[[send_email]]
-name = "email"			#CF发件, 配置后优先使用
+#[[send_email]]
+#name = "email"			#CF发件, 配置后优先使用
 
 [[send_email]]
 name = "forward"		#站内转发到已验证的其他邮箱，不限制单个地址
